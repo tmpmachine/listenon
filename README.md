@@ -1,4 +1,7 @@
 # listen-on
+Simplify attaching listeners and tidy up event callbacks on web page elements.
+
+## Utility Code
 non-minified :
 ```js
 ;(function() {
@@ -20,6 +23,7 @@ window.listenOn=function(e,t,l){for(let n of document.querySelectorAll(e))n.addE
 
 
 <script>
+
   window.listenOn=function(e,t,l){for(let n of document.querySelectorAll(e))n.addEventListener(t,l[n.dataset.callback])};
   
   let DOMEvents = {
